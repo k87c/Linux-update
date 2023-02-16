@@ -1,0 +1,31 @@
+#!/bin/bash
+
+TEXT_RESET='\e[0m'
+TEXT_YELLOW='\e[0;33m'
+
+echo -e $TEXT_YELLOW
+echo 'apt update started...'
+echo -e $TEXT_RESET
+sudo apt update
+
+
+echo -e $TEXT_YELLOW
+echo 'apt upgrade started...'
+echo -e $TEXT_RESET
+sudo apt upgrade -y
+
+echo -e $TEXT_YELLOW
+echo 'apt auto remove started...'
+echo -e $TEXT_RESET
+sudo apt autoremove -y
+
+echo -e $TEXT_YELLOW
+echo 'snap refresh started...'
+echo -e $TEXT_RESET
+sudo snap refresh
+
+echo -e $TEXT_YELLOW
+echo 'flatpak update started...'
+echo -e $TEXT_RESET
+sudo flatpak update -y
+

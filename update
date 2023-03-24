@@ -10,9 +10,9 @@ sudo apt update
 
 
 echo -e $TEXT_YELLOW
-echo 'apt upgrade started...'
+echo 'apt full-upgrade started...'
 echo -e $TEXT_RESET
-sudo apt upgrade -y
+sudo apt full-upgrade -y
 
 echo -e $TEXT_YELLOW
 echo 'apt auto remove started...'

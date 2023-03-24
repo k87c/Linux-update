@@ -8,7 +8,6 @@ echo 'apt update started...'
 echo -e $TEXT_RESET
 sudo apt update
 
-
 echo -e $TEXT_YELLOW
 echo 'apt full-upgrade started...'
 echo -e $TEXT_RESET
@@ -29,3 +28,7 @@ echo 'flatpak update started...'
 echo -e $TEXT_RESET
 sudo flatpak update -y
 
+echo -e $TEXT_YELLOW
+echo 'apt autoclean started...'
+echo -e $TEXT_RESET
+sudo apt autoclean -y

@@ -1,6 +1,6 @@
 To install:
 
-sudo -su
+sudo su
 
 mv update /usr/bin/
 
